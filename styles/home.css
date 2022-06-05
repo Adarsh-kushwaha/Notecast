@@ -1,0 +1,114 @@
+body {
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+.content {
+    background-color: #2941AB;
+    background-image: url("https://www-growth.scdn.co/static/home/bursts.svg");
+    color: #1ED760;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    font-family: poppins;
+    background-size: 175%;
+    background-position: 46% 4%;
+    -webkit-box-pack: center;
+    justify-content: center;
+    min-height: 846px;
+    overflow: hidden;
+}
+
+.content p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #1ED760;
+}
+
+.content button {
+    background-color: #1ED760;
+    padding: .7rem 2rem;
+    border-radius: 100vw;
+    border: none;
+    color: #2941AB;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    cursor: pointer;
+    /* now we'll add that cool hover and active effect */
+    transition: 100ms ease-in-out box-shadow;
+}
+
+.content button:hover {
+    transform: scale(1.05);
+}
+
+.content h1 {
+    font-size: 8rem;
+    font-weight: 900;
+    transform: translateX(-10%);
+}
+
+.content h1 span {
+    display: block;
+    transform: translateX(30%);
+}
+
+
+@media screen and (max-width: 1300px) {
+
+
+    .content p {
+        margin-top: 14px;
+    }
+
+    .content h1 {
+        font-size: 5rem;
+        transform: translate(-5%);
+    }
+
+    .content h1 span {
+        display: block;
+        transform: translateX(20%);
+    }
+
+}
+
+
+@media screen and (max-width: 750px) {
+
+    .content {
+        background-image: url("https://www-growth.scdn.co/static/home/bursts-mobile.svg");
+        background-position: center top 40%;
+        background-repeat: no-repeat;
+        background-size: 215%;
+        height: 100vh;
+        text-align: center;
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .content p {
+        margin-top: 14px;
+    }
+
+    .content h1 {
+        font-size: 3rem;
+        transform: translate(0);
+    }
+
+    .content h1 span {
+        display: block;
+        transform: translateX(0);
+    }
+
+}
